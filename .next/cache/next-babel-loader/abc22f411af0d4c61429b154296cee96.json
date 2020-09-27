@@ -1,0 +1,1 @@
+{"ast":null,"code":"import React from \"react\";\nvar __jsx = React.createElement;\n\nconst {\n  default: Nav\n} = require(\"../nav/Nav\");\n\nconst Header = () => {\n  return __jsx(\"header\", null, __jsx(Nav, null));\n};\n\nexport default Header;","map":null,"metadata":{},"sourceType":"module"}

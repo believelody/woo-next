@@ -1,6 +1,5 @@
 
 const Product = ({product}) => {
-    console.log(product)
   return (
       <div className="card rounded h-100">
           <div className="card-header d-flex justify-content-between">

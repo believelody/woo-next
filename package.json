@@ -22,7 +22,6 @@
     "dotenv": "^8.2.0"
   },
   "scripts": {
-    "dev": "now dev",
     "build": "next build",
     "start": "next start"
   },

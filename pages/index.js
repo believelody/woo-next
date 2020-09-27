@@ -17,6 +17,7 @@ const PRODUCTS_QUERY = gql`query{
         shortDescription
         stockQuantity
         id
+        slug
         image {
           altText
           sourceUrl
@@ -26,7 +27,7 @@ const PRODUCTS_QUERY = gql`query{
   }
 }`
 
-const Index = ({products}) => {
+const IndexPage = ({products}) => {
   return (
     <Layout>
       <Products products={products} />
@@ -34,12 +35,12 @@ const Index = ({products}) => {
   )
 }
 
-Index.getInitialProps = async () => {
+IndexPage.getInitialProps = async () => {
   // const res = await fetch(`${clientConfig.siteUrl}/products`)
   // const products = await res.json()
   const {data: {products}} = await client.query({ query: PRODUCTS_QUERY })
-  console.log(products)
+  // console.log(products)
   return { products: products.nodes }
 }
 
-export default Index
+export default IndexPage

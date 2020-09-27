@@ -1,3 +1,4 @@
+import Link from "next/link"
 
 const Product = ({product}) => {
   return (
@@ -17,7 +18,12 @@ const Product = ({product}) => {
             </p>
           </div>
           <div className="card-body d-flex align-items-center justify-content-between">
-              <a href="#" className="btn btn-primary px-5">View</a>
+              <Link
+                as={`/product/${product.slug}-${product.productId}`}
+                href={`/product?slug=${product.id}`}
+              >
+                <a className="btn btn-primary px-5">View</a>
+              </Link>
               <a href="#" className="card-link">Another link</a>
           </div>
       </div>

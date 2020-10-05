@@ -1,4 +1,4 @@
-import Product from "./Product"
+import ProductItem from "./ProductItem"
 
 const Products = ({ products }) => {
   return (
@@ -8,7 +8,7 @@ const Products = ({ products }) => {
                 products.length ?
                     products.map(product => (
                         <li className="mx-3" key={product.id}>
-                            <Product product={product} />
+                            <ProductItem product={product} />
                         </li>
                     ))
                     :

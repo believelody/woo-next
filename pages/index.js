@@ -1,5 +1,4 @@
 import React from 'react'
-import Layout from '../components/layout/Layout'
 import gql from "graphql-tag"
 import fetch from "isomorphic-unfetch"
 import clientConfig from '../client-config/config'
@@ -29,9 +28,7 @@ const PRODUCTS_QUERY = gql`query{
 
 const IndexPage = ({products}) => {
   return (
-    <Layout>
-      <Products products={products} />
-    </Layout>
+    <Products products={products} />
   )
 }
 

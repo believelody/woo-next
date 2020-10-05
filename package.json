@@ -16,12 +16,14 @@
     "react": "^16.13.1",
     "react-apollo": "^3.1.5",
     "react-dom": "^16.13.1",
+    "react-markdown": "^4.3.1",
     "woocommerce-api": "^1.5.0"
   },
   "devDependencies": {
     "dotenv": "^8.2.0"
   },
   "scripts": {
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "export": "next export"

@@ -1,4 +1,5 @@
 import Link from "next/link"
+import CartNav from "../cart/CartNav"
 
 const Nav = () => {
   return (
@@ -16,13 +17,19 @@ const Nav = () => {
             </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Categories</a>
+            <Link href="/">
+              <a className="nav-link">Categories</a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">My Account</a>
+            <Link href="/">
+              <a className="nav-link">My Account</a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">About</a>
+            <Link href="/">
+              <a className="nav-link">About</a>
+            </Link>
           </li>
           {/* <li className="nav-item dropdown">
             <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
@@ -35,6 +42,13 @@ const Nav = () => {
             </div>
           </li> */}
         </ul>
+        <div className="bg-light nav-item float-right">
+          <Link as="/cart" href="/cart">
+            <a className="nav-link">
+              <CartNav />
+            </a>
+          </Link>
+        </div>
         {/* <form className="form-inline my-2 my-lg-0">
           <input className="form-control mr-sm-2" type="text" placeholder="Search" />
           <button className="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>

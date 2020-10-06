@@ -1,0 +1,1 @@
+export const compare2Obj = (a, b) => Object.entries(a).toString() === Object.entries(b).toString()

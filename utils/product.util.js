@@ -1,0 +1,1 @@
+export const productRawPrice = price => parseFloat(price.replace(",", ".").substring(1))
